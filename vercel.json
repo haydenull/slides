@@ -3,6 +3,10 @@
     {
       "source": "/2023/fetch-bot/(.*)",
       "destination": "/2023/fetch-bot/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "https://blog.haydenhayden.com"
     }
   ]
 }
