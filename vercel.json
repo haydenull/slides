@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/2023/fetch-bot/(.*)",
+      "destination": "/2023/fetch-bot/index.html"
+    }
+  ]
+}
