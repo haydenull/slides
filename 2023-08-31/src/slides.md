@@ -14,7 +14,7 @@ lineNumbers: true
 启封 Hayden
 </div>
 
-<a href="https://github.com/haydenull" class="absolute top-0 left-0 mx-10 my-12 border-none! cursor-pointer"><img class="w-10 h-10 rounded-full shadow" target="_blank" src="/avatar.jpg" /></a>
+<a href="https://github.com/haydenull" class="absolute top-0 left-0 mx-10 my-12 border-none! cursor-pointer"><img class="w-10 h-10 rounded-full shadow" target="_blank" src="/avatar.png" /></a>
 <div absolute right-0 bottom-0 mx-10 my-12 flex="~ col" text-sm text-right>
   <div>Hikari FE</div>
   <div text-sm text-gray-400>2023-08-31</div>
@@ -22,20 +22,34 @@ lineNumbers: true
 
 ---
 transition: slide-left
+growX: 10
+growY: 90
 ---
 
 # Why fetch-bot
 
-<v-clicks>
+<v-click>
 
 ## 前端数据可靠性
 
-<img src="front-data.excalidraw.png" class="mt-8 rounded shadow-sm" />
+</v-click>
 
-</v-clicks>
+<LightOrDark>
+  <template #dark>
+    <v-click><img src="/front-data.excalidraw.dark.png" class="mt-8 rounded shadow-sm" /></v-click>
+  </template>
+  <template #light>
+    <v-click><img src="/front-data.excalidraw.light.png" class="mt-8 rounded shadow-sm" /></v-click>
+  </template>
+</LightOrDark>
+
+
+<v-click><Arrow x1="400" y1="500" x2="170" y2="350" /></v-click>
 
 ---
 layout: intro
+growX: 50
+growY: 50
 ---
 
 # Features
@@ -53,6 +67,8 @@ layout: intro
 
 ---
 layout: intro
+growX: 0
+growY: 50
 ---
 
 # 安装
@@ -71,6 +87,8 @@ layout: intro
 
 ---
 layout: intro
+growX: 80
+growY: 60
 ---
 
 # 引入
@@ -97,6 +115,8 @@ export default fetchBot
 
 ---
 layout: intro
+growX: 50
+growY: 70
 ---
 
 # 使用
@@ -125,6 +145,8 @@ export const getStudentInfo = fetchBot(
 
 ---
 layout: intro
+growX: 50
+growY: 10
 ---
 
 # 效果
@@ -133,6 +155,8 @@ layout: intro
 
 ---
 layout: intro
+growX: 80
+growY: 20
 ---
 
 # 自定义
@@ -144,6 +168,8 @@ layout: intro
 
 ---
 layout: intro
+growX: 50
+growY: -20
 ---
 
 # 可能性
@@ -163,6 +189,8 @@ layout: intro
 
 ---
 layout: section
+growX: 50
+growY: 120
 ---
 
 # 如何实现
@@ -171,10 +199,19 @@ layout: section
 layout: center
 ---
 
-<img src="/theory.excalidraw.png" class="mt-8 rounded shadow-sm" />
+<LightOrDark>
+  <template #dark>
+    <img src="/theory.excalidraw.dark.png" class="mt-8 rounded shadow-sm" />
+  </template>
+  <template #light>
+    <img src="/theory.excalidraw.light.png" class="mt-8 rounded shadow-sm" />
+  </template>
+</LightOrDark>
 
 ---
 layout: intro
+growX: 50
+growY: -10
 ---
 
 # 问题
@@ -191,6 +228,8 @@ layout: intro
 
 ---
 layout: intro
+growX: 100
+growY: 70
 ---
 
 # Tree shaking 友好
@@ -224,6 +263,9 @@ layout: intro
 
 ---
 layout: intro
+growX: 70
+growY: 30
+growSize: 0.6
 ---
 
 # Roadmap
@@ -239,6 +281,10 @@ layout: intro
 ---
 layout: center
 class: 'text-center pb-5'
+growX: 50
+growY: 120
 ---
 
 # 谢谢！
+
+Slides on [slides.haydenhayden.com](https://slides.haydenhayden.com)
