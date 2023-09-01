@@ -3,10 +3,13 @@
     {
       "source": "/2023/fetch-bot/(.*)",
       "destination": "/2023/fetch-bot/index.html"
-    },
+    }
+  ],
+  "redirects": [
     {
       "source": "/",
-      "destination": "https://blog.haydenhayden.com"
+      "destination": "https://blog.haydenhayden.com",
+      "statusCode": 301
     }
   ]
 }

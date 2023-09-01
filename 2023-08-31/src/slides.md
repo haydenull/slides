@@ -48,7 +48,7 @@ growY: 90
 
 ---
 layout: intro
-growX: 50
+growX: 70
 growY: 50
 ---
 
