@@ -1,0 +1,17 @@
+{
+  "name": "2024-03-23",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /2024/github-copilot/ --out ../../dist/2024/github-copilot",
+    "export": "slidev export --per-slide --output ../2024-03-23-github-copilot.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.7",
+    "@slidev/client": "^0.48.7",
+    "@slidev/theme-default": "^0.25.0",
+    "seedrandom": "^3.0.5",
+    "vue": "^3.4.21"
+  }
+}

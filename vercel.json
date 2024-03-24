@@ -8,7 +8,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "https://haydenhayden.com/talks",
+      "destination": "https://haydenhayden.com/talk",
       "statusCode": 301
     }
   ]
