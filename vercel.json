@@ -3,6 +3,10 @@
     {
       "source": "/2023/fetch-bot/(.*)",
       "destination": "/2023/fetch-bot/index.html"
+    },
+    {
+      "source": "/2024/github-copilot/(.*)",
+      "destination": "/2024/github-copilot/index.html"
     }
   ],
   "redirects": [
