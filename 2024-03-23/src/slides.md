@@ -11,6 +11,7 @@ highlighter: shiki
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
+colorSchema: dark
 ---
 <img class="size-10 rounded-full absolute top-10 border" src="https://pocket.haydenhayden.com/blog/202403241700326.jpg" alt="avatar" />
 
@@ -25,32 +26,15 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+title: Github Copilot 是什么
 transition: fade-out
 ---
 
-# Github Copilot 是什么
+<h1 transition-all absolute top-10 left-14 :class="$clicks <=0 ? 'scale-150 !left-1/2 !top-1/2 -translate-x-1/2' : ''">Github Copilot 是什么</h1>
 
-<video v-click autoplay playsinline muted loop class="w-full opacity-80 rounded-md" poster="https://github.githubassets.com/assets/hero-poster-18f705106687.webp">
+<video v-click autoplay playsinline muted loop class="w-full mt-14 opacity-80 rounded-md" poster="https://github.githubassets.com/assets/hero-poster-18f705106687.webp">
   <source src="https://github.githubassets.com/assets/hero-lg-6a98e47708e8.mp4" type="video/mp4">
 </video>
-
----
-transition: slide-up
----
-
-# 设置
-
-<div class="flex justify-center">
-  <img src="/github-copilot-language.png" alt="Copilot Settings" class="w-4/5 opacity-80 rounded-md" />
-</div>
-
-<p class="text-center !mt-10">设置语言为中文</p>
-
-<!--
-默认使用 VSCode 的语言配置，但可以通过设置覆盖
-
-但是对于生成 commit message 无效
--->
 
 ---
 layout: section
@@ -68,7 +52,9 @@ layout: intro
 level: 2
 ---
 
-<h1 class="!text-5xl"><b class="text-rose">Don't</b> let copilot fly your plane</h1>
+<h1 class="!text-4xl"><b class="text-rose">Don't</b> let copilot fly your plane</h1>
+
+Github Copilot is an assistant on your flight, not a replacement for you.
 
 <v-clicks>
 
@@ -92,7 +78,7 @@ title: Copilot 是你的助手
 level: 2
 ---
 
-<h1 class="!text-5xl">把 Copilot 当做任劳任怨的<b class="text-green">免费助手</b></h1>
+<h1 class="!text-4xl">把 Copilot 当做任劳任怨的<b class="text-green">免费助手</b></h1>
 
 <v-clicks>
 
@@ -110,7 +96,7 @@ level: 2
 transition: slide-up
 ---
 
-<h1 class="!text-5xl">Copilot 最大的用处是<b class="text-green">减少精力消耗</b></h1>
+<h1 class="!text-4xl">Copilot 最大的用处是<b class="text-green">减少精力消耗</b></h1>
 
 <b class="text-rose">不要期望</b> Copilot 大幅减少工作量和时间
 
@@ -125,15 +111,21 @@ transition: slide-up
 </v-clicks>
 
 ---
+layout: section
+---
+
+# 适用场景
+
+---
 layout: two-cols
 class: "flex flex-col justify-center"
 title: 擅长与不擅长
 transition: fade
 ---
 
-<h1 class="text-green">擅长</h1>
+<h1 class="text-green"> 擅长</h1>
 
-- 单文件能够完成的功能（方法、Hook、组件）
+- 单文件能够完成的功能（方法、Hook、组件
 - 常见的业务场景
 - 编程相关概念（竞态、异步）
 
@@ -141,7 +133,7 @@ transition: fade
 
 <div v-click>
 
-<h1 class="text-rose">不擅长</h1>
+<h1 class="text-rose">🤥 不擅长</h1>
 
 - 多个文件组合完成的功能模块
 - 业务特定的逻辑
@@ -151,61 +143,111 @@ transition: fade
 
 <!-- 对组件划分能力提出了更高的要求 -->
 
----
-layout: intro
----
-
-# 生成代码的几种方式
-
-1. 自动补全
-2. Inline Chat
-3. Chat Panel
 
 ---
-layout: intro
+layout: section
+transition: view-transition
 ---
 
-# 自动补全
-
-- 根据已有代码自动推断
-- 代码如果有类型，会更准确
-- Copilot 会将 VSCode 当前打开的 Tab 作为上下文
-- 多写注释，写详细的注释
+# 生成代码的几种方式 {.view-transition-title-10}
 
 ---
 layout: intro
+transition: view-transition
 ---
 
-# Inline Chat
+# 生成代码的几种方式 {.view-transition-title-10.!text-4xl}
+
+<div pl-1>
+  <div v-click>
+
+  <CarbonIbmWatsonxCodeAssistantForZRefactor text-purple /> Code Completion {.view-transition-title-11}
+
+  </div>
+
+  <div mt-3 />
+
+  <div v-click><CarbonChatBot text-purple /> Chat</div>
+  <v-clicks text-sm pl-4 text-zinc>
+
+  - Inline Chat
+  - Chat Panel
+
+  </v-clicks>
+</div>
+
+
+---
+title: Code Completion
+layout: intro
+---
+
+# <CarbonIbmWatsonxCodeAssistantForZRefactor text-4xl text-purple mb-1 /> Code Completion {.view-transition-title-11.!text-4xl}
+
+根据已有代码自动推断，生成代码。
+
+<v-clicks>
+
+1. Copilot 会将 VSCode 当前打开的 Tab 作为上下文
+   - <span class="text-zinc-400 text-base">适时打开相关的文件</span>
+   - <span class="text-zinc-400 text-base">及时关闭不相关的文件</span>
+2. 增加详细的注释
+   - <span class="text-zinc-400 text-base">文件顶部总览型注释</span>
+   - <span class="text-zinc-400 text-base">函数、方法、变量的注释</span>
+   - <span class="text-zinc-400 text-base">代码执行 step by step 的注释</span>
+3. 完善而准确的类型定义
+4. 具有描述性且易于理解的变量名
+5. 提供示例：Input <PhArrowRightBold text-sm text-zinc /> Output
+6. 手动控制 import 库
+
+</v-clicks>
+
+<!-- 代码可读性越高，提示效果越好 -->
+
+---
+title: Inline Chat
+layout: intro
+---
+
+# <CarbonChatBot text-purple text-4xl /> Inline Chat {.!text-4xl}
 
 快捷键：<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd>
 
 唤起临时对话框，输入Prompt，生成代码。适用于临时需求。但也可以多次对话。
 
 ---
+title: Chat Panel
 layout: intro
 ---
 
-# Chat Panel
+# <CarbonChatBot text-purple text-4xl /> Chat Panel {.!text-4xl}
 
 Copilot Chat：侧边栏，输入 Prompt，生成代码。适用多轮对话。
 
 ---
+title: Tip1:合理使用预置 Prompt
 layout: intro
 ---
 
-# 预置 Prompt
+# <span class="text-green font-semibold text-4xl">Tip1:</span> 合理使用预置 Prompt {.!text-4xl}
+
+<v-clicks>
 
 - `/fix`: 修复问题
 - `/explain`: 解释代码
 - `/docs`: 生成文档
 - `/tests`: 生成测试代码
 
+</v-clicks>
+
+<IcOutlineTipsAndUpdates class="text-zinc text-4xl absolute right-1/5 top-1/2 opacity-10 scale-600 -translate-y-1/2" />
+
 ---
+title: Tip2:提供更相关的上下文
 layout: intro
 ---
 
-# 上下文
+# <span class="text-green font-semibold text-4xl">Tip2:</span> 提供更相关的上下文 {.!text-4xl}
 
 - Highlight Code
 - Current File
@@ -214,10 +256,112 @@ layout: intro
 - #file
 - #selection
 
+<IcOutlineTipsAndUpdates class="text-zinc text-4xl absolute right-1/5 top-1/2 opacity-10 scale-600 -translate-y-1/2" />
+
+---
+title: Tip3:按主题组织对话
+layout: intro
+---
+
+# <span class="text-green font-semibold text-4xl">Tip3:</span> 按主题组织对话 {.!text-4xl}
+
+- 一个对话只处理一个问题
+- 适当移除与问题不相关的对话
+
+<IcOutlineTipsAndUpdates class="text-zinc text-4xl absolute right-1/5 top-1/2 opacity-10 scale-600 -translate-y-1/2" />
+
+---
+title: 编写更好的 Prompt
+layout: section
+---
+# 编写更好的<FluentSquareHintSparkles48Regular text-purple duration-300 transition-all text-6xl :class="$clicks >=1 ? 'w-20 ml-2' : 'w-0'" /> <span v-if="$clicks <= 0">Prompt</span> <span v-if="$clicks >= 1" text-purple v-mark.underline.purple.at="1">Prompt</span>
+
+---
+title: 3S 原则
+transition: view-transition
+class: grid grid-cols-3 gap-4
+---
+
+<div mt-30 flex flex-col gap-3 items-center >
+  <h2 text-center><span text-6xl text-purple font-semibold class="view-transition-title-20-1">S</span>imple</h2>
+  <div text-zinc-400 text-base flex flex-col gap-2 v-click>
+    <div>将复杂问题拆分成多步简单问题</div>
+    <div>一个 Prompt 只处理一个问题</div>
+    <div>生成的代码越多，越容易出错</div>
+    <div>生成的代码越少，越容易 review</div>
+  </div>
+
+</div>
+
+<div mt-30 flex flex-col gap-3 items-center>
+  <h2 text-center><span text-6xl text-green font-semibold class="view-transition-title-20-2">S</span>pecific</h2>
+  <div text-zinc-400 text-base flex flex-col gap-2 v-click>
+    <div>提供更多更具体的上下文</div>
+    <div>利用相关文件</div>
+    <div>利用高亮代码</div>
+    <div>利用 agent 和指令</div>
+  </div>
+</div>
+
+<div mt-30 flex flex-col gap-3 items-center>
+  <h2 text-center><span text-6xl text-teal font-semibold class="view-transition-title-20-3">S</span>hort</h2>
+  <div text-zinc-400 text-base flex flex-col gap-2 v-click>
+    <div>不用在意错别字</div>
+    <div>不需要写完整的句子</div>
+  </div>
+</div>
+
+---
+title: 3S 原则
+layout: section
+class: "flex justify-center"
+---
+
+<div flex gap-10>
+  <h2 flex justify-end items-end text-zinc-400 >
+    <span inline-flex flex-col text-center text-7xl text-purple font-semibold>
+      <PhCrownSimpleBold text-4xl mb--2 />
+      <span class="view-transition-title-20-1">S</span>
+    </span>
+    <span mb-2>imple</span>
+  </h2>
+  <h2 flex justify-end items-end text-zinc-400 >
+    <span inline-flex flex-col text-center text-7xl text-green font-semibold>
+      <PhCrownSimpleBold text-4xl mb--2 />
+      <span class="view-transition-title-20-2">S</span>
+    </span>
+    <span mb-2>pecific</span>
+  </h2>
+  <h2 flex justify-end items-end text-zinc-400 >
+    <span inline-flex flex-col text-center text-7xl text-teal font-semibold>
+      <PhCrownSimpleBold text-4xl mb--2 />
+      <span class="view-transition-title-20-3">S</span>
+    </span>
+    <span mb-2>hort</span>
+  </h2>
+</div>
+
+
 ---
 layout: section
 ---
-# 举个例子 🌰
+
+# 不只是代码生成
+
+---
+title: 不只是代码生成
+layout: intro
+---
+
+<v-clicks>
+
+- Github Copilot Cli
+  - Code Whisperer (Fig)
+  - Warp
+- Commit Message
+- 处理 PR，Code Review
+
+</v-clicks>
 
 ---
 layout: intro
@@ -227,3 +371,41 @@ layout: intro
 
 - [Perplexity](https://www.perplexity.ai/)
 - [Devv](https://devv.ai)
+
+---
+transition: slide-up
+---
+
+# 设置
+
+<div class="flex justify-center">
+  <img src="/github-copilot-language.png" alt="Copilot Settings" class="w-4/5 opacity-80 rounded-md" />
+</div>
+
+<p class="text-center !mt-10 text-zinc">设置语言为中文</p>
+
+<!--
+默认使用 VSCode 的语言配置，但可以通过设置覆盖
+
+但是对于生成 commit message 无效
+-->
+
+---
+layout: intro
+---
+
+# 参考资料
+- [开贴写一下我如何让 github copilot 完成我日常 50% 左右的工作](https://twitter.com/real_kai42/status/1728280569640018107)
+- [Release party v1.84 🎉 | Copilot Updates](https://www.youtube.com/watch?v=i63DjsjdR3s)
+- [Using GitHub Copilot in your IDE: Tips, tricks and best practices](https://github.blog/2024-03-25-how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/)
+- [Copilot Best Practices (What Not To Do)](https://www.youtube.com/watch?v=2q0BoioYSxQ&list=PLKOP-QacfsTVPTEkkoMhDvu2c80VJUw05&index=4)
+- [Master the core principles of prompt engineering with GitHub Copilot](https://www.youtube.com/watch?v=hh1nOX14TyY&list=PLKOP-QacfsTVPTEkkoMhDvu2c80VJUw05&index=5)
+
+---
+layout: center
+class: 'text-center pb-5'
+---
+
+# 谢谢！
+
+Slides on [slides.haydenhayden.com](https://slides.haydenhayden.com)
