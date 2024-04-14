@@ -4,7 +4,7 @@ highlighter: shiki
 css: unocss
 transition: fade-out
 lineNumbers: true
-colorScheme: dark
+colorSchema: dark
 ---
 
 <h1 class="font-mono">fetch-bot</h1>
