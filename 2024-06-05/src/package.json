@@ -1,0 +1,17 @@
+{
+  "name": "2024-06-05",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /2024/gitlab-ci-cd-101/ --out ../../dist/2024/gitlab-ci-cd-101",
+    "export": "slidev export --per-slide --output ../gitlab-ci-cd-101.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.7",
+    "@slidev/client": "^0.48.7",
+    "@slidev/theme-default": "^0.25.0",
+    "seedrandom": "^3.0.5",
+    "vue": "^3.4.21"
+  }
+}
