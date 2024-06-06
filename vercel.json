@@ -14,6 +14,10 @@
       "destination": "https://github.com/haydenull/slides/blob/main/2024-03-23/github-copilot-101.pdf?raw=true"
     },
     {
+      "source": "/2024/gitlab-ci-cd-101/pdf",
+      "destination": "https://github.com/haydenull/slides/blob/main/2024-06-07/gitlab-ci-cd-101.pdf?raw=true"
+    },
+    {
       "source": "/2024/github-copilot-101/(.*)",
       "destination": "/2024/github-copilot-101/index.html",
       "statusCode": 301
