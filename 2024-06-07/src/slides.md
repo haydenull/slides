@@ -320,6 +320,69 @@ include:
       stage: verify
 ```
 
+---
+title: needs 与 dependencies
+class: flex gap-10
+---
+
+<div class="flex-1">
+
+## needs
+
+needs 用于指定 job 之间的依赖关系，即一个 job 依赖于另一个 job 的执行结果。他可以改变 job 的执行顺序。{.text-zinc}
+
+```yaml {15-16}
+job1:
+  stage: test
+  script:
+    - echo "Running job1"
+
+job2:
+  stage: test
+  script:
+    - echo "Running job2"
+
+job3:
+  stage: build
+  script:
+    - echo "Running job3"
+  needs:
+    - job1
+```
+
+</div>
+
+<div class="flex-1">
+
+## dependencies
+
+dependencies 用于指定 job 需要下载哪些 job 的 artifacts，其值也必须是之前 stage 里定义的 job。未指定时默认下载之前 stage 的所有 job 的 artifacts。{.text-zinc}
+
+```yaml {15-16}
+job1:
+  stage: test
+  script:
+    - echo "Running job1"
+
+job2:
+  stage: test
+  script:
+    - echo "Running job2"
+
+job3:
+  stage: build
+  script:
+    - echo "Running job3"
+  dependencies:
+    - job1
+```
+
+</div>
+
+<!--
+
+-->
+
 
 
 ---

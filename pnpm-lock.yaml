@@ -54,7 +54,7 @@ importers:
         version: 0.48.7(@types/markdown-it@14.1.1)(@types/node@20.2.5)(playwright-chromium@1.34.3)(postcss@8.4.38)
       '@slidev/client':
         specifier: ^0.48.7
-        version: 0.48.7(postcss@8.4.38)(vite@5.2.12)
+        version: 0.48.7(postcss@8.4.38)(vite@5.2.3)
       '@slidev/theme-default':
         specifier: ^0.25.0
         version: 0.25.0
@@ -63,9 +63,9 @@ importers:
         version: 3.0.5
       vue:
         specifier: ^3.4.21
-        version: 3.4.21(typescript@5.4.5)
+        version: 3.4.21(typescript@5.4.3)
 
-  2024-06-05/src:
+  2024-06-07/src:
     dependencies:
       '@slidev/cli':
         specifier: ^0.48.7
@@ -81,7 +81,7 @@ importers:
         version: 3.0.5
       vue:
         specifier: ^3.4.21
-        version: 3.4.21(typescript@5.4.3)
+        version: 3.4.21(typescript@5.4.5)
 
 packages:
 
@@ -2082,6 +2082,16 @@ packages:
       - typescript
     dev: false
 
+  /@shikijs/twoslash@1.2.0(typescript@5.4.5):
+    resolution: {integrity: sha512-rVIpuL40tXG5hItVf+4aYTEEwQO6R5pvzqMZa5r6bLMpHK720Op25e/BnCohNIdsUOEaFH9xqRSJo8ubjCiM1w==}
+    dependencies:
+      '@shikijs/core': 1.2.0
+      twoslash: 0.2.4(typescript@5.4.5)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
+
   /@shikijs/vitepress-twoslash@1.2.0(typescript@5.4.3):
     resolution: {integrity: sha512-gE2WxHmH+SDB+PVrmz3Aucf1OGe/RXfJVHIM/vx1R1H6ZtVP1SQ996qa6iPOcwF6/LNW+AODxrxZAAUUFS4GIQ==}
     dependencies:
@@ -2094,6 +2104,24 @@ packages:
       twoslash: 0.2.4(typescript@5.4.3)
       twoslash-vue: 0.2.4(typescript@5.4.3)
       vue: 3.4.21(typescript@5.4.3)
+    transitivePeerDependencies:
+      - '@nuxt/kit'
+      - supports-color
+      - typescript
+    dev: false
+
+  /@shikijs/vitepress-twoslash@1.2.0(typescript@5.4.5):
+    resolution: {integrity: sha512-gE2WxHmH+SDB+PVrmz3Aucf1OGe/RXfJVHIM/vx1R1H6ZtVP1SQ996qa6iPOcwF6/LNW+AODxrxZAAUUFS4GIQ==}
+    dependencies:
+      '@shikijs/twoslash': 1.2.0(typescript@5.4.5)
+      floating-vue: 5.2.2(vue@3.4.21)
+      mdast-util-from-markdown: 2.0.0
+      mdast-util-gfm: 3.0.0
+      mdast-util-to-hast: 13.1.0
+      shiki: 1.2.0
+      twoslash: 0.2.4(typescript@5.4.5)
+      twoslash-vue: 0.2.4(typescript@5.4.5)
+      vue: 3.4.21(typescript@5.4.5)
     transitivePeerDependencies:
       - '@nuxt/kit'
       - supports-color
@@ -2355,11 +2383,11 @@ packages:
       '@iconify-json/ph': 1.1.11
       '@iconify-json/svg-spinners': 1.1.2
       '@shikijs/monaco': 1.2.0
-      '@shikijs/vitepress-twoslash': 1.2.0(typescript@5.4.3)
-      '@slidev/parser': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.12)
+      '@shikijs/vitepress-twoslash': 1.2.0(typescript@5.4.5)
+      '@slidev/parser': 0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12)
       '@slidev/rough-notation': 0.1.0
-      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.12)
-      '@typescript/ata': 0.9.4(typescript@5.4.3)
+      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12)
+      '@typescript/ata': 0.9.4(typescript@5.4.5)
       '@unhead/vue': 1.8.20(vue@3.4.21)
       '@unocss/reset': 0.58.6
       '@vueuse/core': 10.9.0(vue@3.4.21)
@@ -2379,9 +2407,9 @@ packages:
       recordrtc: 5.6.2
       shiki: 1.2.0
       shiki-magic-move: 0.3.4(shiki@1.2.0)(vue@3.4.21)
-      typescript: 5.4.3
+      typescript: 5.4.5
       unocss: 0.58.6(postcss@8.4.38)(vite@5.2.12)
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
       vue-demi: 0.14.7(vue@3.4.21)
       vue-router: 4.3.0(vue@3.4.21)
     transitivePeerDependencies:
@@ -2409,11 +2437,11 @@ packages:
       '@iconify-json/ph': 1.1.11
       '@iconify-json/svg-spinners': 1.1.2
       '@shikijs/monaco': 1.2.0
-      '@shikijs/vitepress-twoslash': 1.2.0(typescript@5.4.3)
-      '@slidev/parser': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3)
+      '@shikijs/vitepress-twoslash': 1.2.0(typescript@5.4.5)
+      '@slidev/parser': 0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.3)
       '@slidev/rough-notation': 0.1.0
-      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3)
-      '@typescript/ata': 0.9.4(typescript@5.4.3)
+      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.3)
+      '@typescript/ata': 0.9.4(typescript@5.4.5)
       '@unhead/vue': 1.8.20(vue@3.4.21)
       '@unocss/reset': 0.58.6
       '@vueuse/core': 10.9.0(vue@3.4.21)
@@ -2433,9 +2461,9 @@ packages:
       recordrtc: 5.6.2
       shiki: 1.2.0
       shiki-magic-move: 0.3.4(shiki@1.2.0)(vue@3.4.21)
-      typescript: 5.4.3
+      typescript: 5.4.5
       unocss: 0.58.6(postcss@8.4.38)(vite@5.2.3)
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
       vue-demi: 0.14.7(vue@3.4.21)
       vue-router: 4.3.0(vue@3.4.21)
     transitivePeerDependencies:
@@ -2462,11 +2490,11 @@ packages:
       js-yaml: 4.1.0
     dev: true
 
-  /@slidev/parser@0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.12):
+  /@slidev/parser@0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3):
     resolution: {integrity: sha512-4GcH9jr9XSmATRXwHwBG3SvAbyTLTQ1SYcBpGwFGLwIRoyYGcwdb5xcIGytEnwuWvde9wE1JZs5W6IYntSBBNw==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.12)
+      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3)
       js-yaml: 4.1.0
     transitivePeerDependencies:
       - '@svgr/core'
@@ -2482,11 +2510,31 @@ packages:
       - vue-template-es2015-compiler
     dev: false
 
-  /@slidev/parser@0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3):
+  /@slidev/parser@0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12):
     resolution: {integrity: sha512-4GcH9jr9XSmATRXwHwBG3SvAbyTLTQ1SYcBpGwFGLwIRoyYGcwdb5xcIGytEnwuWvde9wE1JZs5W6IYntSBBNw==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3)
+      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12)
+      js-yaml: 4.1.0
+    transitivePeerDependencies:
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+      - vue-template-compiler
+      - vue-template-es2015-compiler
+    dev: false
+
+  /@slidev/parser@0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.3):
+    resolution: {integrity: sha512-4GcH9jr9XSmATRXwHwBG3SvAbyTLTQ1SYcBpGwFGLwIRoyYGcwdb5xcIGytEnwuWvde9wE1JZs5W6IYntSBBNw==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@slidev/types': 0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.3)
       js-yaml: 4.1.0
     transitivePeerDependencies:
       - '@svgr/core'
@@ -2542,38 +2590,6 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: false
 
-  /@slidev/types@0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.12):
-    resolution: {integrity: sha512-qB3QyUXdnmTivUIWTtu6tnIagtnSAkp6zWdYk9dzgdP/EkrOQptZdbhsxuZHlPPJ+SG4QtPQn9mv5qXfYaaSSA==}
-    engines: {node: '>=18.0.0'}
-    dependencies:
-      '@antfu/utils': 0.7.7
-      '@vitejs/plugin-vue': 5.0.4(vite@5.2.12)(vue@3.4.21)
-      '@vitejs/plugin-vue-jsx': 3.1.0(vite@5.2.12)(vue@3.4.21)
-      katex: 0.16.9
-      mermaid: 10.9.0
-      monaco-editor: 0.47.0
-      shiki: 1.2.0
-      unocss: 0.58.6(postcss@8.4.38)(vite@5.2.12)
-      unplugin-icons: 0.18.5
-      unplugin-vue-markdown: 0.26.0(vite@5.2.12)
-      vite-plugin-remote-assets: 0.4.1(vite@5.2.12)
-      vite-plugin-vue-server-ref: 0.4.2(vite@5.2.12)(vue@3.4.21)
-      vue: 3.4.21(typescript@5.4.3)
-      vue-router: 4.3.0(vue@3.4.21)
-    transitivePeerDependencies:
-      - '@svgr/core'
-      - '@svgx/core'
-      - '@unocss/webpack'
-      - '@vue/compiler-sfc'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-      - vue-template-compiler
-      - vue-template-es2015-compiler
-    dev: false
-
   /@slidev/types@0.48.7(postcss@8.4.38)(typescript@5.4.3)(vite@5.2.3):
     resolution: {integrity: sha512-qB3QyUXdnmTivUIWTtu6tnIagtnSAkp6zWdYk9dzgdP/EkrOQptZdbhsxuZHlPPJ+SG4QtPQn9mv5qXfYaaSSA==}
     engines: {node: '>=18.0.0'}
@@ -2591,6 +2607,70 @@ packages:
       vite-plugin-remote-assets: 0.4.1(vite@5.2.3)
       vite-plugin-vue-server-ref: 0.4.2(vite@5.2.3)(vue@3.4.21)
       vue: 3.4.21(typescript@5.4.3)
+      vue-router: 4.3.0(vue@3.4.21)
+    transitivePeerDependencies:
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+      - vue-template-compiler
+      - vue-template-es2015-compiler
+    dev: false
+
+  /@slidev/types@0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12):
+    resolution: {integrity: sha512-qB3QyUXdnmTivUIWTtu6tnIagtnSAkp6zWdYk9dzgdP/EkrOQptZdbhsxuZHlPPJ+SG4QtPQn9mv5qXfYaaSSA==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@antfu/utils': 0.7.7
+      '@vitejs/plugin-vue': 5.0.4(vite@5.2.12)(vue@3.4.21)
+      '@vitejs/plugin-vue-jsx': 3.1.0(vite@5.2.12)(vue@3.4.21)
+      katex: 0.16.9
+      mermaid: 10.9.0
+      monaco-editor: 0.47.0
+      shiki: 1.2.0
+      unocss: 0.58.6(postcss@8.4.38)(vite@5.2.12)
+      unplugin-icons: 0.18.5
+      unplugin-vue-markdown: 0.26.0(vite@5.2.12)
+      vite-plugin-remote-assets: 0.4.1(vite@5.2.12)
+      vite-plugin-vue-server-ref: 0.4.2(vite@5.2.12)(vue@3.4.21)
+      vue: 3.4.21(typescript@5.4.5)
+      vue-router: 4.3.0(vue@3.4.21)
+    transitivePeerDependencies:
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+      - vue-template-compiler
+      - vue-template-es2015-compiler
+    dev: false
+
+  /@slidev/types@0.48.7(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.3):
+    resolution: {integrity: sha512-qB3QyUXdnmTivUIWTtu6tnIagtnSAkp6zWdYk9dzgdP/EkrOQptZdbhsxuZHlPPJ+SG4QtPQn9mv5qXfYaaSSA==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@antfu/utils': 0.7.7
+      '@vitejs/plugin-vue': 5.0.4(vite@5.2.3)(vue@3.4.21)
+      '@vitejs/plugin-vue-jsx': 3.1.0(vite@5.2.3)(vue@3.4.21)
+      katex: 0.16.9
+      mermaid: 10.9.0
+      monaco-editor: 0.47.0
+      shiki: 1.2.0
+      unocss: 0.58.6(postcss@8.4.38)(vite@5.2.3)
+      unplugin-icons: 0.18.5
+      unplugin-vue-markdown: 0.26.0(vite@5.2.3)
+      vite-plugin-remote-assets: 0.4.1(vite@5.2.3)
+      vite-plugin-vue-server-ref: 0.4.2(vite@5.2.3)(vue@3.4.21)
+      vue: 3.4.21(typescript@5.4.5)
       vue-router: 4.3.0(vue@3.4.21)
     transitivePeerDependencies:
       - '@svgr/core'
@@ -2862,12 +2942,12 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@typescript/ata@0.9.4(typescript@5.4.3):
+  /@typescript/ata@0.9.4(typescript@5.4.5):
     resolution: {integrity: sha512-PaJ16WouPV/SaA+c0tnOKIqYq24+m93ipl/e0Dkxuianer+ibc5b0/6ZgfCFF8J7QEp57dySMSP9nWOFaCfJnw==}
     peerDependencies:
       typescript: ^4.4.4
     dependencies:
-      typescript: 5.4.3
+      typescript: 5.4.5
     dev: false
 
   /@typescript/vfs@1.5.0:
@@ -2950,7 +3030,7 @@ packages:
       '@unhead/shared': 1.8.20
       hookable: 5.5.3
       unhead: 1.8.20
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     dev: false
 
   /@unocss/astro@0.55.3(vite@4.4.9):
@@ -3428,7 +3508,7 @@ packages:
       '@babel/plugin-transform-typescript': 7.24.1(@babel/core@7.24.3)
       '@vue/babel-plugin-jsx': 1.1.5(@babel/core@7.24.3)
       vite: 5.2.12(@types/node@20.2.5)
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3468,7 +3548,7 @@ packages:
       vue: ^3.2.25
     dependencies:
       vite: 5.2.12(@types/node@20.2.5)
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     dev: false
 
   /@vitejs/plugin-vue@5.0.4(vite@5.2.3)(vue@3.4.21):
@@ -3594,6 +3674,26 @@ packages:
       muggle-string: 0.3.1
       path-browserify: 1.0.1
       typescript: 5.4.3
+      vue-template-compiler: 2.7.16
+    dev: false
+
+  /@vue/language-core@1.8.27(typescript@5.4.5):
+    resolution: {integrity: sha512-L8Kc27VdQserNaCUNiSFdDl9LWT24ly8Hpwf1ECy3aFb9m6bDhBGQYOujDm21N7EW3moKIOKEanQwe1q5BK+mA==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@volar/language-core': 1.11.1
+      '@volar/source-map': 1.11.1
+      '@vue/compiler-dom': 3.4.21
+      '@vue/shared': 3.4.21
+      computeds: 0.0.1
+      minimatch: 9.0.3
+      muggle-string: 0.3.1
+      path-browserify: 1.0.1
+      typescript: 5.4.5
       vue-template-compiler: 2.7.16
     dev: false
 
@@ -3744,7 +3844,7 @@ packages:
       framesync: 6.1.2
       popmotion: 11.0.5
       style-value-types: 5.1.2
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     optionalDependencies:
       '@nuxt/kit': 3.11.2
     transitivePeerDependencies:
@@ -8704,6 +8804,19 @@ packages:
       - supports-color
     dev: false
 
+  /twoslash-vue@0.2.4(typescript@5.4.5):
+    resolution: {integrity: sha512-AIcsYRSxn5WuZC+dD7/n99s1UEY6e5IljoGL3YijQvI/pylgsKk5sWXptp5NrRTH0srBLXoeVpE1re1Eo6eiJw==}
+    peerDependencies:
+      typescript: '*'
+    dependencies:
+      '@vue/language-core': 1.8.27(typescript@5.4.5)
+      twoslash: 0.2.4(typescript@5.4.5)
+      twoslash-protocol: 0.2.4
+      typescript: 5.4.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /twoslash@0.2.4(typescript@5.4.3):
     resolution: {integrity: sha512-hc3y11BjLHP4kV37TR6lUKksxpZp0LQi9kCy95ka6qobye/gV49PqXZIuWlRaRVGNvp4AJBMg8aiwkp0M8x/nQ==}
     peerDependencies:
@@ -8712,6 +8825,18 @@ packages:
       '@typescript/vfs': 1.5.0
       twoslash-protocol: 0.2.4
       typescript: 5.4.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /twoslash@0.2.4(typescript@5.4.5):
+    resolution: {integrity: sha512-hc3y11BjLHP4kV37TR6lUKksxpZp0LQi9kCy95ka6qobye/gV49PqXZIuWlRaRVGNvp4AJBMg8aiwkp0M8x/nQ==}
+    peerDependencies:
+      typescript: '*'
+    dependencies:
+      '@typescript/vfs': 1.5.0
+      twoslash-protocol: 0.2.4
+      typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -9509,7 +9634,7 @@ packages:
       mlly: 1.6.1
       ufo: 1.5.3
       vite: 5.2.12(@types/node@20.2.5)
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -9699,7 +9824,7 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     dev: false
 
   /vue-eslint-parser@9.3.1(eslint@8.41.0):
@@ -9743,7 +9868,7 @@ packages:
       vue: ^3.2.0
     dependencies:
       '@vue/devtools-api': 6.6.1
-      vue: 3.4.21(typescript@5.4.3)
+      vue: 3.4.21(typescript@5.4.5)
     dev: false
 
   /vue-starport@0.3.0(typescript@5.0.4):
