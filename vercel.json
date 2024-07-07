@@ -26,6 +26,15 @@
     {
       "source": "/2024/gitlab-ci-cd-101/(.*)",
       "destination": "/2024/gitlab-ci-cd-101/index.html"
+    },
+    {
+      "source": "/2024/react-web-framework/pdf",
+      "destination": "https://github.com/haydenull/slides/blob/main/2024-07-12/react-web-framework.pdf?raw=true",
+      "statusCode": 301
+    },
+    {
+      "source": "/2024/react-web-framework/(.*)",
+      "destination": "/2024/react-web-framework/index.html"
     }
   ],
   "redirects": [

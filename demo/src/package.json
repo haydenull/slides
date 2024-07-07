@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "slidev --open",
+    "dev": "slidev",
     "build": "slidev build --base /2024/demo/ --out ../../dist/2024/demo",
     "export": "slidev export --per-slide --output ../demo.pdf"
   },
@@ -12,7 +12,7 @@
     "@slidev/client": "^0.48.7",
     "@slidev/theme-default": "^0.25.0",
     "seedrandom": "^3.0.5",
-    "slidev-addon-excalidraw": "^1.0.2",
+    "slidev-addon-excalidraw": "^1.0.4",
     "vue": "^3.4.21"
   },
   "slidev": {

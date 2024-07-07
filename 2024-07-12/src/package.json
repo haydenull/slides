@@ -1,0 +1,24 @@
+{
+  "name": "2024-07-12",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2024/react-web-framework/ --out ../../dist/2024/react-web-framework",
+    "export": "slidev export --per-slide --output ../react-web-framework.pdf"
+  },
+  "dependencies": {
+    "@excalidraw/utils": "^0.1.2",
+    "@slidev/cli": "^0.48.7",
+    "@slidev/client": "^0.48.7",
+    "@slidev/theme-default": "^0.25.0",
+    "seedrandom": "^3.0.5",
+    "slidev-addon-excalidraw": "^1.0.4",
+    "vue": "^3.4.21"
+  },
+  "slidev": {
+    "addons": [
+      "slidev-addon-excalidraw"
+    ]
+  }
+}
