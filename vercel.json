@@ -35,6 +35,15 @@
     {
       "source": "/2024/react-web-framework/(.*)",
       "destination": "/2024/react-web-framework/index.html"
+    },
+    {
+      "source": "/2024/weapp-ci/pdf",
+      "destination": "https://github.com/haydenull/slides/blob/main/2024-10-25/weapp-ci.pdf?raw=true",
+      "statusCode": 301
+    },
+    {
+      "source": "/2024/weapp-ci/(.*)",
+      "destination": "/2024/weapp-ci/index.html"
     }
   ],
   "redirects": [

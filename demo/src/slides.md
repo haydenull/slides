@@ -19,6 +19,8 @@ colorSchema: dark
 
 <a href="https://github.com/haydenull" target="_blank" alt="GitHub Haydenull" title="Open in GitHub" class="pt-12 text-base text-zinc-400 absolute bottom-14 !border-none !hover:text-white"><carbon-logo-github /> 启封 Hayden</a>
 
+<!-- 使用 icon https://icon-sets.iconify.design/ -->
+
 ---
 layout: center
 ---

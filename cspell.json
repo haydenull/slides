@@ -9,7 +9,8 @@
         "iconify",
         "shiki",
         "slidev",
-        "unocss"
+        "unocss",
+        "weapp"
     ],
     "ignoreWords": [],
     "import": []
