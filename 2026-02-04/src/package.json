@@ -1,0 +1,23 @@
+{
+  "name": "2026-02-04",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2026/claude-code-101/ --out ../../dist/2026/claude-code-101",
+    "export": "slidev export --per-slide --output ../claude-code-101.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.11.5",
+    "@slidev/client": "^52.11.5",
+    "@slidev/theme-default": "^0.25.0",
+    "seedrandom": "^3.0.5",
+    "slidev-addon-excalidraw": "^1.0.4",
+    "vue": "^3.4.21"
+  },
+  "slidev": {
+    "addons": [
+      "slidev-addon-excalidraw"
+    ]
+  }
+}
