@@ -44,6 +44,15 @@
     {
       "source": "/2024/weapp-ci/(.*)",
       "destination": "/2024/weapp-ci/index.html"
+    },
+    {
+      "source": "/2026/claude-code-101/pdf",
+      "destination": "https://github.com/haydenull/slides/blob/main/2026-02-04/claude-code-101.pdf?raw=true",
+      "statusCode": 301
+    },
+    {
+      "source": "/2026/claude-code-101/(.*)",
+      "destination": "/2026/claude-code-101/index.html"
     }
   ],
   "redirects": [
