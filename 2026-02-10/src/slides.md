@@ -1,8 +1,8 @@
 ---
-title: Vibe Coding — 从 Prompt 工程到 Context 管理
+title: Code is Cheaper — Claude Code 最佳实践与工程师价值重塑
 info: |
-  ## Vibe Coding
-  从 Prompt 工程到 Context 管理
+  ## Code is Cheaper
+  Claude Code 最佳实践与工程师价值重塑
 theme: gemini
 highlighter: shiki
 transition: slide-left
@@ -15,9 +15,9 @@ colorSchema: dark
 <a href="https://github.com/haydenull" target="_blank" alt="GitHub Haydenull" title="Open in GitHub" class="!border-none !hover:text-white"><carbon-logo-github /> 启封 Hayden</a>
 </div>
 
-# Vibe Coding <PhRobot />
+# Code is Cheaper <PhRobot />
 
-## 从 Prompt 工程到 Context 管理
+## Claude Code 最佳实践与工程师价值重塑
 ---
 layout: center
 ---
