@@ -19,5 +19,8 @@
     "addons": [
       "slidev-addon-excalidraw"
     ]
+  },
+  "devDependencies": {
+    "slidev-theme-gemini": "^0.1.0"
   }
 }
