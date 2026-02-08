@@ -29,7 +29,7 @@ layout: default
   <div class="text-2xl font-bold text-purple-400">2</div>
   <div>
     <div class="text-lg font-semibold">持续更新 CLAUDE.md</div>
-    <div class="text-zinc-400 text-sm">积累项目特定的约定、架构决策、常见问题 → AI 自动获取上下文</div>
+    <div class="text-zinc-400 text-sm">积累项目特定的约定、架构决策、常见问题 → 让 AI 自己更新</div>
   </div>
 </div>
 
@@ -37,7 +37,7 @@ layout: default
   <div class="text-2xl font-bold text-green-400">3</div>
   <div>
     <div class="text-lg font-semibold">积累 Commands/Skills 优化重复工作</div>
-    <div class="text-zinc-400 text-sm">三次重复就值得自动化（如 /commit、/gitlab-code-review）</div>
+    <div class="text-zinc-400 text-sm">三次重复就值得自动化（如 /commit、/new-git-branch、/gitlab-code-review）</div>
   </div>
 </div>
 
@@ -73,19 +73,19 @@ layout: cards
 cards:
   - title: 主动澄清
     desc: 让 AI 使用 AskUserQuestion 主动询问，不要让 AI 猜测需求
-    tags: ["沟通"]
+    tags: ["🎯 核心", "最重要"]
+  - title: 明确验收标准
+    desc: 对比示例展示清晰 vs 模糊的需求描述
+    tags: ["🎯 核心", "最重要"]
   - title: 命令别名
     desc: 高频工具值得最短命令，如 alias cc="claude"
     tags: ["效率"]
   - title: 立即暂存
-    desc: AI 每次小步修改后立即 git add，永远不要盲目信任 AI 产出
+    desc: AI 每次小步修改后立即 git add，不要盲目信任 AI 产出
     tags: ["安全"]
   - title: 控制规模
-    desc: 理想：2-3 个文件、几十行代码、3 分钟 review 完
+    desc: 提前拆解任务，单次执行理想：2-3 个文件、几十行代码、3 分钟 review 完
     tags: ["节奏"]
-  - title: 明确验收标准
-    desc: 对比示例展示清晰 vs 模糊的需求描述
-    tags: ["质量"]
 ---
 
 # 高效工作流

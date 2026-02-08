@@ -77,11 +77,11 @@ title: 工程师价值重新定位
 layout: two-cols-header
 ---
 
-# 工程师价值的重新定位
+# 工程师价值的重新定位{.mb-10}
 
 ::left::
 
-## 旧时代
+## 旧时代{.mb-2}
 
 工程师 = <span class="text-purple-300">写代码的人</span>
 
@@ -90,7 +90,7 @@ layout: two-cols-header
 
 ::right::
 
-## AI 时代
+## AI 时代{.mb-2}
 
 工程师 = <span class="text-green-300">问题分解者 + 质量把关者</span>
 
@@ -106,7 +106,7 @@ title: 工程师经验的价值
 <div class="space-y-6 mt-8">
 
 <div v-click class="text-center text-zinc-300 text-xl italic">
-"人的认知上限决定了 AI 的代码质量"
+"AI 的速度对工程师提出了更高的要求"
 </div>
 
 <div v-click class="grid grid-cols-2 gap-6 mt-12">
@@ -147,13 +147,6 @@ Review AI 生成的代码<br>
 </div>
 </div>
 
-</div>
-
-<div v-click class="mt-12 text-center">
-<div class="inline-block bg-gradient-to-r from-orange-900/20 to-purple-900/20 px-8 py-4 rounded-xl border border-orange-700/30">
-<div class="text-zinc-200 font-bold text-lg">结论</div>
-<div class="text-zinc-300 mt-2">工程师经验不再是负担，而是 AI 时代的<strong class="text-orange-300">核心杠杆</strong></div>
-</div>
 </div>
 
 </div>
@@ -216,19 +209,19 @@ title: LLM 的局限性
 layout: two-cols-header
 ---
 
-# 为什么 LLM 会"不择手段"？
+# 为什么 LLM 会"不择手段"？{.mb-10}
 
 ::left::
 
-## 原因
+## 原因{.mb-2}
 
-- LLM 理解"目标"但不理解"价值观"
-- "让测试通过"和"写正确代码"在 AI 眼中可能等价
+- LLM 理解"目标"但不理解"价值"
+- "让测试通过"和"写正确的代码"在 AI 眼中可能等价
 - AI 没有"工程师的职业操守"这种隐性约束
 
 ::right::
 
-## 人类 Review 的价值
+## 人类 Review 的价值{.mb-2}
 
 - 识别"达成目标但违背原则"的代码
 - 判断"技术上可行但工程上错误"的方案
@@ -253,7 +246,7 @@ title: 未来的可能性
 layout: two-cols-header
 ---
 
-# 未来的可能性
+# 未来的可能性{.mb-10}
 
 <!-- 结论 -->
 <div v-click class="mt-6">
@@ -264,7 +257,7 @@ layout: two-cols-header
 
 ::left::
 
-## 当 LLM 能力足够强时
+## 当 LLM 能力足够强时{.mb-2}
 
 - AI 能自我修复 bug → review 不再必须？
 - AI 理解全局上下文 → 不会产生技术债？
@@ -272,7 +265,7 @@ layout: two-cols-header
 
 ::right::
 
-## 但即使如此
+## 但即使如此{.mb-2}
 
 - 业务需求的理解仍需人
 - 技术方向的决策仍需人

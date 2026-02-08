@@ -69,7 +69,7 @@ layout: two-cols-header
 <div class="text-zinc-400 text-sm mt-2 space-y-1">
   <div>✅ 需要在所有对话中生效的规则</div>
   <div>✅ 团队编码规范、命名约定</div>
-  <div>❌ 不要写太多（AI 不一定看）</div>
+  <div>❌ 不要写太多（只写 AI 不知道的）</div>
 </div>
 
 ::right::
@@ -101,7 +101,7 @@ topics:
     audience: "高频重复工作流"
     icon: terminal
   - title: "/gitlab-code-review 命令"
-    desc: "自动召回 PR diff 和相关测试，分析代码质量和潜在问题，生成结构化 review"
+    desc: "自动召回 PR diff 和相关测试，分析代码质量和潜在问题，生成结构化 review 建议"
     audience: "高频重复工作流"
     icon: code
 ---
@@ -149,7 +149,7 @@ cards:
 </div>
 
 <div class="text-center text-sm text-zinc-500 mt-4">
-✅ 特定领域的复杂任务 &nbsp;&nbsp; ❌ 通用编程用 Commands
+✅ 特定领域的复杂任务 &nbsp;&nbsp; ❌ 通用任务用 Commands
 </div>
 
 ---
@@ -220,6 +220,6 @@ layout: list
 
 - **特定领域的复杂任务?** → <span class="text-green">Skills</span>
 
-- **任务很复杂需要分解?** → <span class="text-orange">SubAgents</span>
+- **任务很复杂需要分解上下文隔离?** → <span class="text-orange">SubAgents</span>
 
 - **需要外部数据源?** → <span class="text-cyan">MCP</span>

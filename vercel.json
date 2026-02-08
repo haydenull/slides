@@ -46,13 +46,13 @@
       "destination": "/2024/weapp-ci/index.html"
     },
     {
-      "source": "/2026/claude-code-101/pdf",
-      "destination": "https://github.com/haydenull/slides/blob/main/2026-02-04/claude-code-101.pdf?raw=true",
+      "source": "/2026/code-is-cheaper/pdf",
+      "destination": "https://github.com/haydenull/slides/blob/main/2026-02-10/code-is-cheaper.pdf?raw=true",
       "statusCode": 301
     },
     {
-      "source": "/2026/claude-code-101/(.*)",
-      "destination": "/2026/claude-code-101/index.html"
+      "source": "/2026/code-is-cheaper/(.*)",
+      "destination": "/2026/code-is-cheaper/index.html"
     }
   ],
   "redirects": [

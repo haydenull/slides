@@ -62,16 +62,8 @@ layout: two-cols-header
 工程师主动探索代码库
 
 - 边找边思考
-
-**三大能力**
-
-<div text-xs mt-2>
-
-- **符号索引**：Class A 在哪行
-- **关键字搜索**：精准匹配变量名
-- **Agent 循环**：顺着 import 追踪调用链
-
-</div>
+- 关键字搜索：精准匹配变量名
+- Agent 循环：顺着 import 追踪调用链
 
 </div>
 
