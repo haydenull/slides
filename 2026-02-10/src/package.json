@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2026/claude-code-101/ --out ../../dist/2026/claude-code-101",
-    "export": "slidev export --per-slide --output ../claude-code-101.pdf"
+    "build": "slidev build --base /2026/code-is-cheaper/ --out ../../dist/2026/code-is-cheaper",
+    "export": "slidev export --per-slide --output ../code-is-cheaper.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^52.11.5",
